@@ -1,0 +1,121 @@
+== 1 integrity
+(300, 59)
+NaN total 0 inf 0
+dup rows 0 dup ids 0
+dup operating conditions (incl arrangement) 0 ; excl arrangement 0
+constant cols ['geometry_version', 'solver', 'Dh_in_mm', 'A_in_mm2', 'converged', 'nu_cfd', 'nu_basis', 'dataset_rev', 'k_model', 'outer_cap', 'plate_nx', 'plate_ny']
+ cat case_id <StringArray>
+['ALT_000', 'ALT_001', 'ALT_002', 'ALT_003', 'ALT_004']
+Length: 5, dtype: str 300
+ cat geometry_version <StringArray>
+['GateA_converged_v1']
+Length: 1, dtype: str 1
+ cat solver <StringArray>
+['GRAIL-CHT-1.0']
+Length: 1, dtype: str 1
+ cat arrangement <StringArray>
+['alternating', 'parallel']
+Length: 2, dtype: str 2
+ cat converged [ True] 1
+ cat nu_basis <StringArray>
+['conjugate_3D_benchmark_H1_type']
+Length: 1, dtype: str 1
+ cat k_model <StringArray>
+['k(T)_cubic_273_373K']
+Length: 1, dtype: str 1
+ cat plate_nx <StringArray>
+['richardson_2x220_minus_110']
+Length: 1, dtype: str 1
+arrangement vs f_interdig {0: {'alternating': 0, 'parallel': 150}, 1: {'alternating': 150, 'parallel': 0}}
+
+== 2 ranges
+                           min           1%          50%        mean         std         99%         max
+f_interdig                   0            0          0.5         0.5    0.500835           1           1
+G_T_W_m2               400.053      407.107      701.016     700.036     173.356      992.14     999.452
+T_in_K                 288.091      288.529      310.437     310.508     13.0157     332.678     332.979
+T_amb_K                283.037      283.387      298.017         298     8.67188     312.661     312.872
+v_wind_m_s          0.00720644    0.0503997      2.48947     2.49935     1.44652     4.94324     4.98577
+mdot_total_kg_s     0.00101453   0.00104202   0.00274431  0.00275009   0.0010119  0.00445726  0.00448711
+mdot_channel_kg_s  8.45441e-05  8.68353e-05  0.000228693 0.000229175 8.43254e-05 0.000371438 0.000373926
+bridge_mm              20.0213       20.216      28.5077     28.5025     4.91522     36.7844     36.9918
+g_ratio               0.350952     0.357954     0.674357       0.675    0.188001    0.992673    0.997781
+lambda_G              0.502613     0.518002      1.24723     1.25025    0.433548     1.98798     1.99875
+Dh_in_mm               5.19888      5.19888      5.19888     5.19888           0     5.19888     5.19888
+Dh_out_mm              1.82456      1.86096       3.5059     3.50924    0.977394     5.16078     5.18734
+A_in_mm2               28.0569      28.0569      28.0569     28.0569 3.55865e-15     28.0569     28.0569
+A_out_mm2               3.4557      3.59496      12.7592     13.7718     7.17717     27.6473     27.9326
+Re_in                  28.8394      35.3791       90.434     97.0296     37.9684     190.461      199.94
+Re_out                  36.164      44.7411      138.188     157.602     81.4066     415.606     540.181
+mu_Pa_s            0.000351469  0.000390954   0.00055982 0.000595163  0.00014637 0.000943634 0.000997987
+dp_channel_Pa           2.0957      2.25877       14.519     22.0287     22.1383     115.161     158.607
+W_pump_W           2.14606e-06  2.53374e-06  4.28693e-05 6.99954e-05 8.32714e-05 0.000401126 0.000512986
+q_abs_W_m2             259.597      264.174      454.894     454.259     112.492     643.807     648.552
+T_sky_K                262.848      263.336      283.988     284.054     12.3945     305.175     305.485
+h_wind_W_m2K           5.72738      5.89152        15.16     15.1975     5.49676     24.4843     24.6459
+T_out_K                298.173       300.53      331.873     330.758     15.4324     366.534     373.406
+dT_fluid_K             6.17602      7.27457      17.2753     20.2506     10.0638     51.9025     58.2717
+Qu_W                   90.0652      97.9767      200.341     201.176     57.9148     318.329     327.601
+eta                   0.341534     0.379714     0.544571    0.541442   0.0623075      0.6644    0.673246
+T_plate_mean_K         295.482      299.323      330.963     330.324     17.9254     380.473     394.405
+T_plate_max_K          298.952      302.706      338.832     338.786     20.3323     395.847     412.631
+T_plate_min_K          290.688       291.86      317.069     316.255     13.4705     343.903     351.294
+plate_spread_K         6.33114      7.08918      17.8223      22.531     12.9383     59.7462     74.1917
+plate_std_K            1.51317      1.80127       4.9909     6.23852     3.56858     16.1304     19.4683
+P90_K                   298.46      302.219      337.621     337.953     20.2608     395.188     411.854
+P95_K                  298.775      302.527      338.475      338.43     20.2856     395.497     412.229
+P99_K                  298.924      302.679      338.775     338.713     20.3166     395.742     412.512
+R4_K4              7.62709e+09  8.04227e+09  1.20063e+10 1.21376e+10 2.74907e+09 2.09748e+10 2.42492e+10
+mean_T_pow4_K4     7.62468e+09  8.03109e+09  1.19995e+10 1.21024e+10 2.71896e+09 2.08214e+10 2.40206e+10
+T_R4_K                 295.522      299.464      331.019     330.445     17.9254     380.559     394.616
+Q_solar_W              137.067      139.484      240.184     239.849     59.3958      339.93     342.435
+Q_rad_W              -0.666842     -0.47395      4.91237     5.05426     3.23325     14.6842     17.4862
+Q_conv_W              -4.47245     -3.26978      27.8086     28.9686     16.1281     71.5795        77.7
+Q_rear_W              -1.17298    -0.903564      4.49675     4.65005     2.84498     12.4301     13.6157
+U_L_W_m2K             -3.15224    -0.471391      2.24772     2.34431     1.18887     6.67444     14.4301
+T_glass_mean_K         281.631      281.921       297.67     297.879     8.56517     313.138     314.382
+lateral_bridge_W    6.9121e-11  7.29422e-11      43.5869     107.883     118.563      358.04     377.647
+energy_error_pct  -0.000146947 -0.000138706 -1.44043e-05 2.54851e-05 6.36864e-05 0.000134432 0.000144992
+outer_iters                 93           95          274      401.39     352.985     1434.03        1541
+residual           8.01636e-07  8.23404e-07     9.75e-07 9.57486e-07 4.58696e-08 9.99742e-07 9.99957e-07
+nu_cfd                    4.48         4.48         4.48        4.48 8.89662e-16        4.48        4.48
+dataset_rev                  4            4            4           4           0           4           4
+outer_cap                 3000         3000         3000        3000           0        3000        3000
+plate_ny                   120          120          120         120           0         120         120
+
+== 3 reconstruction
+mdot_ch = mdot/12                      maxabs 9.172e-17 meanabs 4.402e-17 maxrel 9.123e-13
+dT = Tout-Tin                          maxabs 1.137e-13 meanabs 7.538e-15 maxrel 8.338e-15
+spread = max-min                       maxabs 1.137e-13 meanabs 8.044e-15 maxrel 8.978e-15
+Qu = mdot cp dT                        maxabs 1.575e-11 meanabs 4.049e-12 maxrel 9.467e-14
+q_abs = G*0.833*0.82*0.95              maxabs 1.137e-13 meanabs 1.345e-14 maxrel 2.144e-16
+Q_solar = q_abs*0.528                  maxabs 5.684e-14 meanabs 8.716e-15 maxrel 2.950e-16
+eta = Qu/(G*0.528)                     maxabs 2.220e-16 meanabs 6.162e-17 maxrel 4.417e-16
+eta_conv = Qu/Q_solar vs eta           maxabs 3.643e-01 meanabs 2.929e-01 maxrel 5.411e-01
+eta/(Qu/Qsolar) = 0.833*0.82*0.95      maxabs 3.331e-16 meanabs 1.044e-16 maxrel 5.133e-16
+R4 = T_R4^4                            maxabs 1.526e-05 meanabs 2.782e-06 maxrel 1.122e-15
+T_R4 = mean_T_pow4^0.25                maxabs 1.370e+00 meanabs 2.197e-01 maxrel 3.531e-03
+W_pump = 12 dp mdot_ch/rho(997)        maxabs 8.465e-17 meanabs 1.321e-17 maxrel 9.380e-13
+
+== 4 energy: residual W min -2.128e-04 max 2.222e-04 maxabs 2.222e-04 meanabs 1.266e-04 rms 1.487e-04 ; pct maxabs 1.480e-04
+energy_error_pct column maxabs 0.0001469465952704
+energy_error_pct vs recomputed         maxabs 1.900e-05 meanabs 1.102e-06 maxrel 8.898e-01
+
+== order checks
+min<=mean                    violations 0 []
+mean<=max                    violations 0 []
+P90<=P95                     violations 0 []
+P95<=P99                     violations 0 []
+P99<=max                     violations 0 []
+T_R4>=mean (power-mean)      violations 120 ['ALT_000', 'ALT_001', 'ALT_002', 'ALT_003', 'ALT_004', 'ALT_005', 'ALT_006', 'ALT_007']
+Tout>Tin                     violations 0 []
+std>0                        violations 0 []
+R4>=meanT4                   violations 0 []
+
+== provenance: which columns equal nx220 exactly, which equal 2*220-110
+{'richardson': ['T_out_K', 'dT_fluid_K', 'Qu_W', 'eta', 'T_plate_mean_K', 'T_plate_max_K', 'T_plate_min_K', 'plate_spread_K', 'plate_std_K', 'P90_K', 'P95_K', 'P99_K', 'Q_rad_W', 'Q_conv_W', 'Q_rear_W', 'U_L_W_m2K', 'T_glass_mean_K', 'lateral_bridge_W'], 'other': ['outer_iters'], 'nx220': ['f_interdig', 'G_T_W_m2', 'T_in_K', 'T_amb_K', 'v_wind_m_s', 'mdot_total_kg_s', 'mdot_channel_kg_s', 'bridge_mm', 'g_ratio', 'lambda_G', 'Dh_in_mm', 'Dh_out_mm', 'A_in_mm2', 'A_out_mm2', 'Re_in', 'Re_out', 'mu_Pa_s', 'dp_channel_Pa', 'W_pump_W', 'q_abs_W_m2', 'T_sky_K', 'h_wind_W_m2K', 'R4_K4', 'mean_T_pow4_K4', 'T_R4_K', 'Q_solar_W', 'energy_error_pct', 'residual', 'nu_cfd', 'dataset_rev', 'outer_cap', 'plate_ny']}
+
+== same checks on raw nx220
+T_R4>=mean 0
+P95<=P99 0
+P99<=max 0
+raw220 energy                          maxabs 2.161e-04 meanabs 1.272e-04 maxrel 2.161e+296

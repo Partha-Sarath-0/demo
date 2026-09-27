@@ -1,0 +1,5 @@
+arrangement,n_modules,test_Q_solar_kWh,xcos_Q_solar_kWh,diff_pct,test_SF,xcos_SF,diff_SF_pts,test_Tcmax_K,xcos_Tcmax_K,diff_K,test_closure_kWh,verdict
+alternating,2,626.31,626.02,+0.045,0.81460,0.81423,+0.037,347.97,347.96,+0.01,-1.438e-10,PASS
+parallel,2,648.57,648.42,+0.023,0.84356,0.84336,+0.020,352.03,352.03,+0.00,-2.164e-10,PASS
+alternating,4,749.75,749.71,+0.006,0.97516,0.97510,+0.006,430.92,429.85,+1.07,-4.992e-10,PASS
+parallel,4,754.13,754.08,+0.007,0.98085,0.98079,+0.007,444.20,443.82,+0.38,-4.645e-10,PASS

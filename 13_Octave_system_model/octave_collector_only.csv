@@ -1,0 +1,5 @@
+arrangement,T_in_K,kWh_m2_yr,annual_eff_on_POA,operating_hours
+alternating,313.15,965.1604,0.488406,3853
+alternating,333.15,823.3858,0.416663,3491
+parallel,313.15,1029.8977,0.521165,3858
+parallel,333.15,882.4632,0.446558,3501

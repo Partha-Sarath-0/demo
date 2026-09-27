@@ -1,0 +1,59 @@
+== integrity
+shape (300, 59) | NaN 0 | inf 0 | dup rows 0 | dup ids 0
+columns identical & same order: True | row order identical: True
+dtypes identical: True
+
+== Rev4 -> Rev4.1 cell-level comparison
+changed columns: {'Re_in': 300, 'Re_out': 300, 'R4_K4': 300, 'mean_T_pow4_K4': 300, 'T_R4_K': 300, 'U_L_W_m2K': 300}
+unchanged columns (byte-for-byte identical text in all 300 rows): 53 of 59
+Re_in            rows 300 | old 28.8394..199.94 | new 21.82..151.275 | max|d| 48.66 mean|d| 23.62 max% 24.34
+Re_out           rows 300 | old 36.164..540.181 | new 27.3618..408.703 | max|d| 131.5 mean|d| 38.36 max% 24.34
+R4_K4            rows 300 | old 7.62709e+09..2.42492e+10 | new 7.62538e+09..2.44362e+10 | max|d| 2.12e+08 mean|d| 2.44e+07 max% 0.9355
+mean_T_pow4_K4   rows 300 | old 7.62468e+09..2.40206e+10 | new 7.62297e+09..2.41975e+10 | max|d| 1.981e+08 mean|d| 2.358e+07 max% 0.8864
+T_R4_K           rows 300 | old 295.522..394.616 | new 295.505..395.374 | max|d| 0.9043 mean|d| 0.1461 max% 0.2331
+U_L_W_m2K        rows 300 | old -3.15224..14.4301 | new -3.18555..14.578 | max|d| 0.1479 mean|d| 0.001594 max% 2.15
+
+== verifications on Rev4.1 (float64, unrounded)
+mdot_ch = mdot/12                            maxabs 9.172e-17 meanabs 4.402e-17 maxrel 9.123e-13
+dT = Tout - Tin                              maxabs 1.137e-13 meanabs 7.538e-15 maxrel 8.338e-15
+Qu = mdot*4180*dT                            maxabs 1.575e-11 meanabs 4.049e-12 maxrel 9.467e-14
+q_abs = G*0.833*0.82*0.95                    maxabs 1.137e-13 meanabs 1.345e-14 maxrel 2.144e-16
+Q_solar = q_abs*0.528                        maxabs 5.684e-14 meanabs 8.716e-15 maxrel 2.950e-16
+eta = Qu/(G*0.528)                           maxabs 2.220e-16 meanabs 6.162e-17 maxrel 4.417e-16
+W_pump = dp*mdot/997                         maxabs 9.438e-17 meanabs 1.043e-17 maxrel 8.508e-13
+R4 = T_R4^4                                  maxabs 1.335e-05 meanabs 2.778e-06 maxrel 1.089e-15
+mean_T_pow4 = T_mean^4                       maxabs 3.815e-06 meanabs 4.578e-07 maxrel 2.095e-16
+U_L = (Qs-Qu)/(0.528(Tp-Ta))                 maxabs 1.776e-15 meanabs 6.569e-17 maxrel 2.073e-16
+   U_L reconstruction: max abs 1.776e-15, max rel 2.073e-16, mean abs 6.569e-17
+Re_in = mdot_ch Dh/(A mu)                    maxabs 2.842e-14 meanabs 4.607e-15 maxrel 3.641e-16
+Re_out = mdot_ch Dh/(A mu)                   maxabs 1.137e-13 meanabs 8.266e-15 maxrel 4.419e-16
+Re_old/Re_new: min 1.321696 max 1.321696 (expected 4A/(pi Dh^2))
+T_min<=T_mean      violations 0
+T_mean<=T_max      violations 0
+P90<=P95           violations 0
+P95<=P99           violations 0
+P99<=T_max         violations 0
+T_R4>=T_mean       violations 0
+R4>=mean_T_pow4    violations 0
+T_R4<=T_max        violations 0
+T_out>T_in         violations 0
+T_R4 - T_mean: min 0.0104 max 1.4205 K; vs 1.5 std^2/T_mean max|diff| 0.0467 K
+
+== energy balance
+residual W: min -2.128e-04 max 2.222e-04 meanabs 1.266e-04 rms 1.487e-04 | max |imbalance| 1.480e-04 %
+identical to Rev4 residual: True
+
+== signs / convergence / ranges
+Q_rad_W    negatives Rev4 11 Rev4.1 11 | sign changes vs Rev4 0
+Q_conv_W   negatives Rev4 12 Rev4.1 12 | sign changes vs Rev4 0
+Q_rear_W   negatives Rev4 16 Rev4.1 16 | sign changes vs Rev4 0
+U_L_W_m2K  negatives Rev4 4 Rev4.1 4 | sign changes vs Rev4 0
+U_L<=0 cases: ['PAR_001', 'PAR_016', 'PAR_060', 'PAR_088'] | |Tp-Ta|<2K: 11
+converged all True | residual max 9.999572512242594e-07 | iters max 1541 cap 3000
+Re_out max 408.7 (laminar < 2300) | Re_in range 21.82-151.28
+R4_K4            min 7.62538e+09 max 2.44362e+10
+T_R4_K           min 295.505 max 395.374
+mean_T_pow4_K4   min 7.62297e+09 max 2.41975e+10
+U_L_W_m2K        min -3.18555 max 14.578
+Re_in            min 21.82 max 151.275
+Re_out           min 27.3618 max 408.703

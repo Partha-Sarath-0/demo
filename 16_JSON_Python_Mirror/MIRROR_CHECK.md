@@ -1,0 +1,71 @@
+# JSON <-> Python mirror check
+
+**PASS** - 65 of 65 mirror files reproduce their JSON byte for byte; 0 JSON files without a mirror.
+
+| JSON file | result | bytes identical | MD5 as built | data identical |
+|---|---|---|---|---|
+| 03_CAD/gate1_channels.json | PASS | yes | yes | yes |
+| 03_CAD/gate1_grading.json | PASS | yes | yes | yes |
+| 03_CAD/gate1_profile.json | PASS | yes | yes | yes |
+| 03_CAD/step_solids.json | PASS | yes | yes | yes |
+| 03_CAD/strip_build.json | PASS | yes | yes | yes |
+| 03_CAD/tessellate_report.json | PASS | yes | yes | yes |
+| 05_Videos/solver_co_current.json | PASS | yes | yes | yes |
+| 05_Videos/solver_counter_current.json | PASS | yes | yes | yes |
+| 07_Results_JSON/rev1_vs_rev2.json | PASS | yes | yes | yes |
+| 07_Results_JSON/rev2_vs_rev3.json | PASS | yes | yes | yes |
+| 07_Results_JSON/rev3_vs_rev4.json | PASS | yes | yes | yes |
+| 07_Results_JSON/rev41_comparison.json | PASS | yes | yes | yes |
+| 07_Results_JSON/rev4_regime_breakdown.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/cht3d_axial_study.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/cht3d_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_alt_nx60.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nu48_nr4_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nu96_nr8_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nx120_m1p0.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nx120_m4p5.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nx240.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_co_nx60.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/nu_developed_summary.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_const_nu.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_const_nu_nx60flow.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_design_axial.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_design_nu448.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_envelope.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_nu_h1.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_nuxi_envelope.json | PASS | yes | yes | yes |
+| 07_Results_JSON/3D_benchmark/rom_nuxi_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_alt_nu48_nr4_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_alt_nu96_nr8_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_alt_nx240.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_co_nu48_nr4_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_co_nu96_nr8_nx120.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_co_nx120_m1p0.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_co_nx120_m4p5.json | PASS | yes | yes | yes |
+| 07_Results_JSON/case_convergence/bench_co_nx240.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/closeout.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/domain_fields.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/domain_study.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/final_uncertainty.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/gci_3d.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/gci_3d_twolevel.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/gci_plate.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/grid_correction.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/htc_L1.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/htc_L2.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/htc_L3.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/hwb_validation.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/mc_summary.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/nu_cfd_revision.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/nu_corrected.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/nu_gci.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/rev2_analysis.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/section_conduction.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/uncertainty_summary.json | PASS | yes | yes | yes |
+| 07_Results_JSON/validation_and_uncertainty/uncertainty_summary_rev1.json | PASS | yes | yes | yes |
+| 12_Stages_3-5-6-7/annual/stage7_results.json | PASS | yes | yes | yes |
+| 12_Stages_3-5-6-7/surrogate/stage3_report.json | PASS | yes | yes | yes |
+| 12_Stages_3-5-6-7/system_model/efficiency_correlations.json | PASS | yes | yes | yes |
+| 13_Octave_system_model/efficiency_correlations.json | PASS | yes | yes | yes |
+| 14_Xcos_block_diagram_model/efficiency_correlations.json | PASS | yes | yes | yes |

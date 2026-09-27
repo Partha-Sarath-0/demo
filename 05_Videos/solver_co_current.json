@@ -1,0 +1,16 @@
+{
+ "mode": "co_current",
+ "f_interdig": 0,
+ "frames": 320,
+ "fps": 20,
+ "simple_iterations": 518,
+ "velocity_snapshots": 52,
+ "u_in_mm_s": 7.447719581072587,
+ "u_out_mm_s": 25.54702631818908,
+ "speed_ratio": 3.4301810158257746,
+ "transit_s": 90.17,
+ "eta": 0.5966969753920134,
+ "Tp_mean_K": 315.03906331342665,
+ "Tp_std_K": 6.737002959937468,
+ "energy_error_pct": -1.3725850879534603e-05
+}

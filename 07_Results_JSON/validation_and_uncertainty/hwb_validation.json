@@ -1,0 +1,67 @@
+{
+ "model": "Hottel-Whillier-Bliss, Duffie & Beckman form",
+ "n_stations": 400,
+ "grid": [
+  220,
+  240
+ ],
+ "cases": {
+  "co_current": {
+   "solver": {
+    "eta": 0.5966968887446247,
+    "U_L": 2.4730850772945105,
+    "T_out": 324.1191163450459,
+    "dT": 24.11911634504588,
+    "Tp_mean": 315.0390627288865
+   },
+   "hwb": {
+    "F_fin_inlet": 0.9995597885006152,
+    "F_fin_outlet": 0.9994398219538484,
+    "F_fin_avg": 0.9995010062645588,
+    "F_prime_inlet": 0.9883982924611493,
+    "F_prime_outlet": 0.9882516750730254,
+    "F_prime_avg": 0.9883279200672833,
+    "F_R": 0.9297365412309846,
+    "tau_alpha": 0.6489069999999999,
+    "eta": 0.5979953778893525,
+    "FR_UL": 2.2993175659337606,
+    "eta0": 0.6033125497605745,
+    "m_per_m": 2.323736017077295,
+    "delta_m": 0.002
+   },
+   "d_eta_pct": 0.21761285658112156
+  },
+  "alternating": {
+   "solver": {
+    "eta": 0.563770628286062,
+    "U_L": 2.2817001371018124,
+    "T_out": 322.78820223808924,
+    "dT": 22.78820223808924,
+    "Tp_mean": 328.0001526399791
+   },
+   "hwb": {
+    "F_fin_inlet": 0.9995938385985703,
+    "F_fin_outlet": 0.9994831456347608,
+    "F_fin_avg": 0.9995396005174991,
+    "F_prime_inlet": 0.9892864919787446,
+    "F_prime_outlet": 0.9891509744020455,
+    "F_prime_avg": 0.9892214473985568,
+    "F_R": 0.9348989291646612,
+    "tau_alpha": 0.6489069999999999,
+    "eta": 0.6017295292056088,
+    "FR_UL": 2.133159014851345,
+    "eta0": 0.6066624594274527,
+    "m_per_m": 2.232012103149662,
+    "delta_m": 0.002
+   },
+   "d_eta_pct": 6.733039824182936
+  }
+ },
+ "roadmap_targets": {
+  "eta0_target": 0.6,
+  "eta0_solver": 0.5966968887446247,
+  "FR_UL_target": 2.0,
+  "FR_UL_hwb": 2.2993175659337606,
+  "note": "these are the roadmap's design intent, so agreement with them is self-consistency, not validation. The HWB comparison above is the independent check."
+ }
+}

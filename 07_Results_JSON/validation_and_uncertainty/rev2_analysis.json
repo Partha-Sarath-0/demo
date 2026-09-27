@@ -1,0 +1,453 @@
+{
+ "nu_rev1": 3.4282,
+ "nu_rev2": 2.9238,
+ "nu_shift_pct": -14.713260603232017,
+ "n_common": 291,
+ "n_co": 150,
+ "n_alt": 141,
+ "rev1_rows_only": [],
+ "rev2_rows_only": [
+  "ALT_029",
+  "ALT_045",
+  "ALT_075",
+  "ALT_090",
+  "ALT_091",
+  "ALT_099",
+  "ALT_114",
+  "ALT_119",
+  "ALT_138"
+ ],
+ "paired_rev1_to_rev2": {
+  "eta": {
+   "label": "efficiency",
+   "unit": "-",
+   "co": {
+    "rev1_mean": 0.5603765980458078,
+    "rev2_mean": 0.5595235095955389,
+    "paired_shift_mean": -0.0008530884502690106,
+    "paired_shift_sd": 9.0446760780257e-05,
+    "paired_shift_pct_mean": -0.15220138627545818,
+    "n": 150
+   },
+   "alt": {
+    "rev1_mean": 0.5330951607325816,
+    "rev2_mean": 0.535301998752056,
+    "paired_shift_mean": 0.0022068380194743696,
+    "paired_shift_sd": 0.0012791240784041078,
+    "paired_shift_pct_mean": 0.4304594892350515,
+    "n": 141
+   }
+  },
+  "plate_std_K": {
+   "label": "plate spread, RMS",
+   "unit": "K",
+   "co": {
+    "rev1_mean": 5.956349622120384,
+    "rev2_mean": 5.9201806655546045,
+    "paired_shift_mean": -0.03616895656577933,
+    "paired_shift_sd": 0.018352072510578205,
+    "paired_shift_pct_mean": -0.6122449950464153,
+    "n": 150
+   },
+   "alt": {
+    "rev1_mean": 4.759438259644007,
+    "rev2_mean": 4.286105507639102,
+    "paired_shift_mean": -0.4733327520049046,
+    "paired_shift_sd": 0.21824131043986267,
+    "paired_shift_pct_mean": -10.670569776332353,
+    "n": 141
+   }
+  },
+  "plate_spread_K": {
+   "label": "plate peak-to-peak",
+   "unit": "K",
+   "co": {
+    "rev1_mean": 19.39594914430159,
+    "rev2_mean": 19.202131919041097,
+    "paired_shift_mean": -0.1938172252604939,
+    "paired_shift_sd": 0.09742809640150392,
+    "paired_shift_pct_mean": -1.0080765226980883,
+    "n": 150
+   },
+   "alt": {
+    "rev1_mean": 18.801835154523936,
+    "rev2_mean": 16.979620047103133,
+    "paired_shift_mean": -1.8222151074207962,
+    "paired_shift_sd": 0.8183868297444149,
+    "paired_shift_pct_mean": -10.220439007156418,
+    "n": 141
+   }
+  },
+  "U_L_W_m2K": {
+   "label": "loss coefficient",
+   "unit": "W/m2K",
+   "co": {
+    "rev1_mean": 2.130903388677257,
+    "rev2_mean": 2.253394183671161,
+    "paired_shift_mean": 0.12249079499390353,
+    "paired_shift_sd": 3.9576658851442557,
+    "paired_shift_pct_mean": 2.210486580394741,
+    "n": 150
+   },
+   "alt": {
+    "rev1_mean": 2.0056036664583052,
+    "rev2_mean": 2.2330249355841607,
+    "paired_shift_mean": 0.2274212691258559,
+    "paired_shift_sd": 2.5134129538341674,
+    "paired_shift_pct_mean": -0.08358182605026393,
+    "n": 141
+   }
+  },
+  "T_out_K": {
+   "label": "outlet temperature",
+   "unit": "K",
+   "co": {
+    "rev1_mean": 331.9252563556761,
+    "rev2_mean": 331.89312119100487,
+    "paired_shift_mean": -0.03213516467119992,
+    "paired_shift_sd": 0.016043045376040888,
+    "paired_shift_pct_mean": -0.009565713008457205,
+    "n": 150
+   },
+   "alt": {
+    "rev1_mean": 328.9910745164563,
+    "rev2_mean": 329.08520645615823,
+    "paired_shift_mean": 0.09413193970191457,
+    "paired_shift_sd": 0.08985416445634486,
+    "paired_shift_pct_mean": 0.028056555069426337,
+    "n": 141
+   }
+  },
+  "T_plate_mean_K": {
+   "label": "mean plate temperature",
+   "unit": "K",
+   "co": {
+    "rev1_mean": 323.91873890326565,
+    "rev2_mean": 324.2067456244262,
+    "paired_shift_mean": 0.2880067211605581,
+    "paired_shift_sd": 0.08247995913134086,
+    "paired_shift_pct_mean": 0.08911897893366856,
+    "n": 150
+   },
+   "alt": {
+    "rev1_mean": 333.4369104569488,
+    "rev2_mean": 332.71509405880533,
+    "paired_shift_mean": -0.7218163981434313,
+    "paired_shift_sd": 0.4528358431789753,
+    "paired_shift_pct_mean": -0.2128371899617517,
+    "n": 141
+   }
+  }
+ },
+ "lateral_bridge_W": {
+  "co": {
+   "rev1_mean_W": 7.686883236601716e-11,
+   "rev2_mean_W": 7.770366513189704e-11,
+   "rev1_max_abs_W": 9.092474329008838e-11,
+   "rev2_max_abs_W": 9.417902901986963e-11,
+   "paired_shift_mean_W": 8.348327658798851e-13
+  },
+  "alt": {
+   "rev1_mean_W": 170.84023901339904,
+   "rev2_mean_W": 154.3576491059633,
+   "rev1_max_abs_W": 303.0638375800224,
+   "rev2_max_abs_W": 279.1591179251808,
+   "paired_shift_mean_W": -16.48258990743578
+  },
+  "note": "absolute watts only. Under co-current flow the lateral bridge is exactly zero by symmetry (CR-12); the small non-zero readings are a cell-alignment sampling artefact and a ratio against them is meaningless."
+ },
+ "arrangement_difference": {
+  "eta": {
+   "label": "efficiency",
+   "unit": "-",
+   "rev1": {
+    "co_mean": 0.5603765980458078,
+    "alt_mean": 0.5330951607325816,
+    "difference": -0.027281437313226187,
+    "difference_pct": -4.8684112449314085,
+    "se_of_difference": 0.00658681218110176,
+    "se_of_difference_pct": 1.175425991033859,
+    "distinguishable_at_k2": true
+   },
+   "rev2": {
+    "co_mean": 0.5595235095955389,
+    "alt_mean": 0.535301998752056,
+    "difference": -0.024221510843482896,
+    "difference_pct": -4.3289531946551865,
+    "se_of_difference": 0.006550045969583281,
+    "se_of_difference_pct": 1.1706471412288098,
+    "distinguishable_at_k2": true
+   },
+   "shift_pct_points": 0.5394580502762221
+  },
+  "plate_std_K": {
+   "label": "plate spread, RMS",
+   "unit": "K",
+   "rev1": {
+    "co_mean": 5.956349622120384,
+    "alt_mean": 4.759438259644007,
+    "difference": -1.196911362476377,
+    "difference_pct": -20.094713010655877,
+    "se_of_difference": 0.34987700039393566,
+    "se_of_difference_pct": 5.87401718486404,
+    "distinguishable_at_k2": true
+   },
+   "rev2": {
+    "co_mean": 5.9201806655546045,
+    "alt_mean": 4.286105507639102,
+    "difference": -1.6340751579155022,
+    "difference_pct": -27.601778564344226,
+    "se_of_difference": 0.33698546717890177,
+    "se_of_difference_pct": 5.692148368707475,
+    "distinguishable_at_k2": true
+   },
+   "shift_pct_points": -7.507065553688349
+  },
+  "plate_spread_K": {
+   "label": "plate peak-to-peak",
+   "unit": "K",
+   "rev1": {
+    "co_mean": 19.39594914430159,
+    "alt_mean": 18.801835154523936,
+    "difference": -0.5941139897776537,
+    "difference_pct": -3.063082839398972,
+    "se_of_difference": 1.2113791069587316,
+    "se_of_difference_pct": 6.2455263103977945,
+    "distinguishable_at_k2": false
+   },
+   "rev2": {
+    "co_mean": 19.202131919041097,
+    "alt_mean": 16.979620047103133,
+    "difference": -2.2225118719379644,
+    "difference_pct": -11.574297485864532,
+    "se_of_difference": 1.158005858893538,
+    "se_of_difference_pct": 6.030610891414841,
+    "distinguishable_at_k2": false
+   },
+   "shift_pct_points": -8.511214646465561
+  },
+  "U_L_W_m2K": {
+   "label": "loss coefficient",
+   "unit": "W/m2K",
+   "rev1": {
+    "co_mean": 2.130903388677257,
+    "alt_mean": 2.0056036664583052,
+    "difference": -0.1252997222189518,
+    "difference_pct": -5.880122153108532,
+    "se_of_difference": 0.3364946415817811,
+    "se_of_difference_pct": 15.791173047533505,
+    "distinguishable_at_k2": false
+   },
+   "rev2": {
+    "co_mean": 2.253394183671161,
+    "alt_mean": 2.2330249355841607,
+    "difference": -0.020369248087000358,
+    "difference_pct": -0.9039363034928669,
+    "se_of_difference": 0.2583568337054242,
+    "se_of_difference_pct": 11.46523034352193,
+    "distinguishable_at_k2": false
+   },
+   "shift_pct_points": 4.976185849615665
+  },
+  "T_out_K": {
+   "label": "outlet temperature",
+   "unit": "K",
+   "rev1": {
+    "co_mean": 331.9252563556761,
+    "alt_mean": 328.9910745164563,
+    "difference": -2.934181839219775,
+    "difference_pct": -0.883988724279432,
+    "se_of_difference": 1.7930662556548462,
+    "se_of_difference_pct": 0.5402018139088149,
+    "distinguishable_at_k2": false
+   },
+   "rev2": {
+    "co_mean": 331.89312119100487,
+    "alt_mean": 329.08520645615823,
+    "difference": -2.8079147348466336,
+    "difference_pct": -0.8460298076592782,
+    "se_of_difference": 1.7951973970276351,
+    "se_of_difference_pct": 0.5408962350848172,
+    "distinguishable_at_k2": false
+   },
+   "shift_pct_points": 0.037958916620153826
+  },
+  "T_plate_mean_K": {
+   "label": "mean plate temperature",
+   "unit": "K",
+   "rev1": {
+    "co_mean": 323.91873890326565,
+    "alt_mean": 333.4369104569488,
+    "difference": 9.518171553683146,
+    "difference_pct": 2.9384442486748603,
+    "se_of_difference": 1.8115006766148551,
+    "se_of_difference_pct": 0.559245409125848,
+    "distinguishable_at_k2": true
+   },
+   "rev2": {
+    "co_mean": 324.2067456244262,
+    "alt_mean": 332.71509405880533,
+    "difference": 8.508348434379116,
+    "difference_pct": 2.6243588540984644,
+    "se_of_difference": 1.7928195438323775,
+    "se_of_difference_pct": 0.5529865026032647,
+    "distinguishable_at_k2": true
+   },
+   "shift_pct_points": -0.31408539457639595
+  }
+ },
+ "flow_profile": {
+  "note": "binned over independent samples; bin-to-bin scatter is sampling noise. The only robust statement is the sign of the difference in every bin.",
+  "bins": [],
+  "rev1": [
+   {
+    "mdot_mid_g_s": 1.2332252773169754,
+    "d_plate_std_pct": -19.280858582798928,
+    "se_pct": 9.150339000654649,
+    "n_alt": 10,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 1.66707642845231,
+    "d_plate_std_pct": 1.3285284920414153,
+    "se_pct": 9.689542270318414,
+    "n_alt": 19,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 2.100927579587645,
+    "d_plate_std_pct": -11.555039013650436,
+    "se_pct": 9.159237338379624,
+    "n_alt": 18,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 2.5347787307229797,
+    "d_plate_std_pct": -0.46378740290745657,
+    "se_pct": 10.69364564332381,
+    "n_alt": 19,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 2.968629881858315,
+    "d_plate_std_pct": -18.670081128010253,
+    "se_pct": 8.677732623330137,
+    "n_alt": 19,
+    "n_co": 17
+   },
+   {
+    "mdot_mid_g_s": 3.402481032993649,
+    "d_plate_std_pct": -31.140626786659787,
+    "se_pct": 7.204693146237929,
+    "n_alt": 18,
+    "n_co": 20
+   },
+   {
+    "mdot_mid_g_s": 3.836332184128984,
+    "d_plate_std_pct": -33.76516046477561,
+    "se_pct": 7.211713991813057,
+    "n_alt": 19,
+    "n_co": 17
+   },
+   {
+    "mdot_mid_g_s": 4.270183335264318,
+    "d_plate_std_pct": -30.008799267368722,
+    "se_pct": 9.341024171778898,
+    "n_alt": 18,
+    "n_co": 20
+   }
+  ],
+  "rev1_all_bins_favour_alternating": false,
+  "rev2": [
+   {
+    "mdot_mid_g_s": 1.2332252773169754,
+    "d_plate_std_pct": -24.754910596121697,
+    "se_pct": 8.790551928647654,
+    "n_alt": 10,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 1.66707642845231,
+    "d_plate_std_pct": -6.875998695773741,
+    "se_pct": 9.348664954288028,
+    "n_alt": 19,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 2.100927579587645,
+    "d_plate_std_pct": -19.83019607551845,
+    "se_pct": 8.742050683907268,
+    "n_alt": 18,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 2.5347787307229797,
+    "d_plate_std_pct": -10.610538525780152,
+    "se_pct": 10.201762604972197,
+    "n_alt": 19,
+    "n_co": 19
+   },
+   {
+    "mdot_mid_g_s": 2.968629881858315,
+    "d_plate_std_pct": -27.427302599800083,
+    "se_pct": 8.247456714197318,
+    "n_alt": 19,
+    "n_co": 17
+   },
+   {
+    "mdot_mid_g_s": 3.402481032993649,
+    "d_plate_std_pct": -38.80252506145934,
+    "se_pct": 6.820782254884502,
+    "n_alt": 18,
+    "n_co": 20
+   },
+   {
+    "mdot_mid_g_s": 3.836332184128984,
+    "d_plate_std_pct": -41.29905417154454,
+    "se_pct": 7.111564818531116,
+    "n_alt": 19,
+    "n_co": 17
+   },
+   {
+    "mdot_mid_g_s": 4.270183335264318,
+    "d_plate_std_pct": -38.06918982368671,
+    "se_pct": 9.027412850219381,
+    "n_alt": 18,
+    "n_co": 20
+   }
+  ],
+  "rev2_all_bins_favour_alternating": true
+ },
+ "censoring": {
+  "rev1_lost_rows": null,
+  "rev1_missing_from_rev2": [],
+  "rows_recovered_in_rev2": [
+   "ALT_029",
+   "ALT_045",
+   "ALT_075",
+   "ALT_090",
+   "ALT_091",
+   "ALT_099",
+   "ALT_114",
+   "ALT_119",
+   "ALT_138"
+  ],
+  "n_recovered": 9,
+  "all_recovered_are_alternating": true,
+  "recovered_mdot_mean_g_s": 1.1031631687117265,
+  "alternating_mdot_mean_g_s": 2.7496384710941393,
+  "recovered_mdot_max_g_s": 1.1900940314717368,
+  "campaign_mdot_min_g_s": 1.0145287459996961,
+  "recovered_plate_std_mean_K": 10.965916134054334,
+  "alternating_plate_std_mean_K": 4.6868941452240165,
+  "uncensored_rev2": {
+   "n_co": 150,
+   "n_alt": 150,
+   "d_plate_std_pct": -20.83190682855712,
+   "se_pct": 6.046490263330451
+  },
+  "censored_291_rev2_d_plate_std_pct": -27.601778564344226,
+  "censored_291_rev1_d_plate_std_pct": -20.094713010655877,
+  "reading": "two corrections of opposite sign, of similar size. Fixing the Nusselt number alone, on the 291 rows both revisions share, strengthens the uniformity benefit from -20.09 % to -27.60 %. Putting the 9 censored low-flow rows back weakens it to -20.83 %. The headline number is the uncensored one, because it is the only average taken over the sample that was actually drawn."
+ }
+}

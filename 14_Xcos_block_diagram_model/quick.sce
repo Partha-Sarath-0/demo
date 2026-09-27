@@ -1,0 +1,11 @@
+here = pwd() + "/";
+exec(here + "grail_xcos_build.sce", -1);
+D = csvRead(here + "xcos_inputs.csv", ",", ".", "double", [], [], [], 1);
+t = D(:, 1) * 3600;
+Vg = struct("time", t, "values", D(:, 2)); Va = struct("time", t, "values", D(:, 3));
+Vm = struct("time", t, "values", D(:, 4)); Vd = struct("time", t, "values", D(:, 5));
+scs_m.props.tf = 86400;
+tic(); Info = scicos_simulate(scs_m, list(), struct("Tc0", D(1,3)), "nw"); mprintf("1 day: %.1f s\n", toc());
+mprintf("E end: %s\n", sci2exp(E.values($,:)/3.6e6));
+mprintf("T samples %d, Tt end %.3f, Tc max %.2f\n", size(T.values,1), T.values($,2), max(T.values(:,1)));
+exit(0);

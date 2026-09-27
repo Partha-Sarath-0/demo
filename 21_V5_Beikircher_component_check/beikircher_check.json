@@ -1,0 +1,61 @@
+{
+ "rear": {
+  "grail_k_vip": 0.006,
+  "grail_t_vip": 0.02,
+  "grail_U_vip_layer": 0.3,
+  "grail_U_rear_total": 0.272461887771651,
+  "measured_k_eff_in_collector": {
+   "silica": [
+    0.01,
+    0.018000000000000002
+   ],
+   "perlite": [
+    0.02,
+    0.0336
+   ]
+  },
+  "grail_U_rear_if_measured_k": {
+   "silica": [
+    0.4279164544065206,
+    0.6906001644286107
+   ],
+   "perlite": [
+    0.7479964381121995,
+    1.0727969348659003
+   ]
+  }
+ },
+ "front": {
+  "grail": [
+   {
+    "dT": 20,
+    "U_top": 2.0572022505336736,
+    "cond": 1.768380849784463,
+    "rad": 0.28882140074921075
+   },
+   {
+    "dT": 40,
+    "U_top": 1.9611514246201434,
+    "cond": 1.660104593575241,
+    "rad": 0.3010468310449025
+   },
+   {
+    "dT": 60,
+    "U_top": 1.9488152029899264,
+    "cond": 1.6227377703372026,
+    "rad": 0.3260774326527239
+   },
+   {
+    "dT": 80,
+    "U_top": 1.9591760244299157,
+    "cond": 1.6029810970961762,
+    "rad": 0.35619492733373936
+   }
+  ],
+  "measured_honeycomb_front_U": [
+   1.95,
+   2.2
+  ],
+  "note": "Beikircher U is for a 30-40 mm honeycomb + ETFE film front; GRAIL uses 10 mm TIM + 2 air gaps + double glass, TiNOX eps 0.04"
+ }
+}

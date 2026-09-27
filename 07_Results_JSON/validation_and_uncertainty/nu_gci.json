@@ -1,0 +1,24 @@
+{
+ "levels": {
+  "L1": {
+   "Nu": 3.7397203711170977,
+   "ncell": 34304
+  },
+  "L2": {
+   "Nu": 3.428185314481043,
+   "ncell": 105600
+  },
+  "L3": {
+   "Nu": 3.223563742374859,
+   "ncell": 356400
+  }
+ },
+ "r21": 1.5,
+ "r32": 1.4546987026176488,
+ "observed_order": 1.2832323978766473,
+ "Nu_extrapolated": 2.923770524936263,
+ "gci_pct": 11.625069387403075,
+ "u_nu_cfd_pct": 9.30005550992246,
+ "nu_used_by_solver": 3.4282,
+ "method": "extract_htc.py, developed region xi > 0.15, applied unchanged to all three grids"
+}

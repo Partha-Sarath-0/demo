@@ -1,0 +1,7 @@
+level,fluid_cells,Nu_developed_mean
+NU48,80640,4.6455
+NU64,138240,4.6022
+NU96,322560,4.5557
+"extrapolated (p=1.12, GCI 2.1%)",,4.48
+H1 reference semicircular duct,,4.088
+campaign Rev1-3 (superseded),,2.9238

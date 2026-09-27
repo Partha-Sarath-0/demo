@@ -1,0 +1,7 @@
+source,d_eta,d_std
+3D discretisation,±0.1 pp,±1.0 pp
+ROM axial after Richardson,<0.1 pp,~0.4 pp
+ROM model form (alternating),0.5 pp,2.0 pp
+Nu band 4.46-4.65,~0.1 pp,~1.1 pp
+entry Nu at 4.5 g/s,<0.1%,<=2.1% of std
+glazing/radiation model,not quantified,not quantified

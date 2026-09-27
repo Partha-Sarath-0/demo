@@ -1,0 +1,32 @@
+{
+ "full-12-adiabatic": {
+  "eta": 0.563770628286062,
+  "Tp_std": 5.92765997837839,
+  "Tp_mean": 328.0001526399791,
+  "bridge_W_per_midline": 20.233646440352363,
+  "nx": 220,
+  "ny": 240,
+  "n_ch": 12,
+  "lateral": "adiabatic"
+ },
+ "2ch-periodic": {
+  "eta": 0.5620362145006731,
+  "Tp_std": 5.966249009363787,
+  "Tp_mean": 328.6764058109408,
+  "bridge_W_per_midline": 19.41180568499426,
+  "nx": 220,
+  "ny": 40,
+  "n_ch": 2,
+  "lateral": "periodic"
+ },
+ "2ch-adiabatic": {
+  "eta": 0.5667094301398394,
+  "Tp_std": 5.388802965906603,
+  "Tp_mean": 326.8562790403778,
+  "bridge_W_per_midline": 33.72937640402639,
+  "nx": 220,
+  "ny": 40,
+  "n_ch": 2,
+  "lateral": "adiabatic"
+ }
+}

@@ -1,0 +1,63 @@
+richardson Qrad sign != sign(Tp-Tg): 1 | Qconv sign != sign(Tp-Tg): 0 | Qrad,Qconv opposite signs: 1
+case_id  T_plate_mean_K  T_plate_min_K  T_plate_max_K  T_glass_mean_K  Q_rad_W  Q_conv_W
+PAR_011      311.183695     295.464423     325.708914      311.298057 0.041932 -0.102111
+raw220 Qrad sign != sign(Tp-Tg): 1 | Qconv sign != sign(Tp-Tg): 0 | Qrad,Qconv opposite signs: 1
+case_id  T_plate_mean_K  T_plate_min_K  T_plate_max_K  T_glass_mean_K  Q_rad_W  Q_conv_W
+PAR_011       311.25193     295.571379     325.747945      311.302242 0.051047 -0.044923
+neg Qrad: Tp_mean-Tg_mean range -5.009077049987752 -0.28355594426489006
+
+== convergence
+residual<=1e-6 all: True max 9.999572512242594e-07 converged all True: True
+outer_iters: >900 35 >1400 8 max 1541 cap 3000 reached: 0
+high-iter: all alt? True mdot max 0.0018944939391162 energy err max 0.0001449917119126
+corr(iters, mdot) alt: -0.944279863323856
+
+== arrangement balance
+pairs 150
+G_T_W_m2         max|ALT_n-PAR_n| 5.600e+02  KS p=1.000  mean alt 699.96 par 700.11
+T_in_K           max|ALT_n-PAR_n| 4.107e+01  KS p=1.000  mean alt 310.51 par 310.51
+T_amb_K          max|ALT_n-PAR_n| 2.656e+01  KS p=1.000  mean alt 298 par 298
+v_wind_m_s       max|ALT_n-PAR_n| 4.517e+00  KS p=1.000  mean alt 2.4994 par 2.4993
+mdot_total_kg_s  max|ALT_n-PAR_n| 3.301e-03  KS p=1.000  mean alt 0.0027496 par 0.0027506
+bridge_mm        max|ALT_n-PAR_n| 1.525e+01  KS p=1.000  mean alt 28.51 par 28.495
+g_ratio          max|ALT_n-PAR_n| 5.833e-01  KS p=1.000  mean alt 0.67494 par 0.67506
+lambda_G         max|ALT_n-PAR_n| 1.339e+00  KS p=1.000  mean alt 1.25 par 1.2505
+
+== correlations (spearman)
+G_T_W_m2         -> Qu_W             rho +0.931
+G_T_W_m2         -> T_plate_mean_K   rho +0.260
+G_T_W_m2         -> eta              rho +0.187
+mdot_total_kg_s  -> dT_fluid_K       rho -0.749
+mdot_total_kg_s  -> Re_in            rho +0.819
+Re_in            -> dp_channel_Pa    rho +0.362
+v_wind_m_s       -> h_wind_W_m2K     rho +1.000
+v_wind_m_s       -> U_L_W_m2K        rho +0.073
+T_amb_K          -> eta              rho +0.412
+T_in_K           -> eta              rho -0.676
+T_plate_mean_K   -> Q_rad_W          rho +0.927
+T_plate_mean_K   -> Q_conv_W         rho +0.873
+f_interdig       -> Qu_W             rho -0.132
+f_interdig       -> eta              rho -0.326
+HWB fit f=0: eta = 0.6010 -2.001*(Tin-Ta)/G, r=-0.960
+HWB fit f=1: eta = 0.5567 -1.922*(Tin-Ta)/G, r=-0.782
+
+== outliers
+dT_fluid_K         IQR   9  z>3   4  robust   7  ['PAR_009', 'PAR_050', 'PAR_054', 'PAR_123']
+Qu_W               IQR   0  z>3   0  robust   0  []
+eta                IQR   3  z>3   2  robust   0  ['ALT_029', 'ALT_144']
+T_plate_mean_K     IQR   5  z>3   3  robust   3  ['ALT_064', 'ALT_114', 'ALT_138']
+T_plate_max_K      IQR   7  z>3   3  robust   3  ['ALT_064', 'ALT_114', 'ALT_138']
+plate_spread_K     IQR   8  z>3   3  robust  10  ['ALT_045', 'ALT_064', 'ALT_138']
+plate_std_K        IQR   8  z>3   2  robust   5  ['ALT_045', 'ALT_138']
+dp_channel_Pa      IQR  26  z>3   5  robust  26  ['ALT_007', 'ALT_043', 'PAR_094', 'PAR_101', 'PAR_103']
+W_pump_W           IQR  31  z>3   7  robust  26  ['ALT_007', 'ALT_043', 'ALT_101', 'ALT_113', 'PAR_094', 'PAR_101']
+U_L_W_m2K          IQR  56  z>3   7  robust  57  ['ALT_121', 'PAR_001', 'PAR_016', 'PAR_020', 'PAR_060', 'PAR_062']
+Q_conv_W           IQR   3  z>3   1  robust   0  ['ALT_114']
+Q_rad_W            IQR   6  z>3   3  robust   3  ['ALT_064', 'ALT_114', 'ALT_138']
+Q_rear_W           IQR   4  z>3   1  robust   0  ['ALT_114']
+lateral_bridge_W   IQR   0  z>3   0  robust  37  []
+outer_iters        IQR  20  z>3   2  robust  24  ['ALT_029', 'ALT_114']
+Re_out             IQR   4  z>3   4  robust   4  ['ALT_007', 'ALT_080', 'ALT_101', 'ALT_133']
+
+duplicate Qu values: 0 dup T_out: 0
+clipping: T_plate_max at bound? 412.6313008788472 ; min T_plate_min 290.6880038215834 vs min T_in 288.09102959418846 ; T_plate_min<T_in: 0

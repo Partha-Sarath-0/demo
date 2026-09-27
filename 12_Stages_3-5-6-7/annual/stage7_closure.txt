@@ -1,0 +1,7 @@
+GHI closure test (GHI vs DNI*cos(z)+DHI), Berhampur TMY
+offset_min  annual_kWh/m2  mean_abs_err_W/m2
+0 1865.0 0.17
++15 1884.5 7.2
++30 1898.4 14.26
+(offsets relative to the stated UTC timestamp; annual GHI in file 1864.9)
+Cross-check: POA at 35 deg tilt (Hay-Davies) 1935.5 kWh/m2/yr vs PVGIS PV-report H(i) 1965.2 (ERA5, PVGIS own transposition): -1.5 %

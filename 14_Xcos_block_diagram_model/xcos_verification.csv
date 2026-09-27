@@ -1,0 +1,5 @@
+arrangement,n_modules,xcos_SF,octave_cont_SF,diff_SF_pts,xcos_Qsolar_kWh,octave_cont_Qsolar_kWh,diff_Qsolar_pct,xcos_Tcmax_K,octave_cont_Tcmax_K,diff_Tcmax_K,pulse_baseline_SF,xcos_minus_pulse_SF_pts,verdict
+alternating,2,0.81423,0.81456,-0.033,626.02,626.28,-0.040,347.96,347.97,-0.01,0.83036,-1.61,PASS
+parallel,2,0.84336,0.84359,-0.023,648.42,648.60,-0.027,352.03,352.02,+0.00,0.85838,-1.50,PASS
+alternating,4,0.97510,0.97516,-0.006,749.71,749.75,-0.006,429.85,429.47,+0.38,0.97913,-0.40,PASS
+parallel,4,0.98079,0.98082,-0.003,754.08,754.10,-0.003,443.82,442.72,+1.11,0.98431,-0.35,PASS

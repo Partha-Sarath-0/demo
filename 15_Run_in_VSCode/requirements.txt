@@ -1,0 +1,13 @@
+# GRAIL Collector - Python packages for the Stage 3-7 scripts
+#   pip install -r 15_Run_in_VSCode/requirements.txt
+# Versions the delivered results were produced and re-checked with (Python 3.11):
+#   numpy 2.4.4, scipy 1.17.1, pandas 3.0.2, scikit-learn 1.8.0, matplotlib 3.10.9,
+#   shap 0.51.0, pymoo 0.6.2, pvlib 0.15.2   -> exact pins: requirements-tested.txt
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+shap
+pymoo
+pvlib

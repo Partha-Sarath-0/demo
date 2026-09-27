@@ -1,0 +1,8 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "search.exclude": {
+    "15_Run_in_VSCode/work/**": true
+  }
+}

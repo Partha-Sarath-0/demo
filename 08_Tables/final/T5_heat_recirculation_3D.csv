@@ -1,0 +1,7 @@
+quantity,value
+absorbed_per_channel_W,24.8
+returned_per_channel_W,9.94
+returned_fraction_pct,40.1
+length_with_negative_qprime_pct,41
+net_W,14.86
+mdot_cp_dT_W,14.85

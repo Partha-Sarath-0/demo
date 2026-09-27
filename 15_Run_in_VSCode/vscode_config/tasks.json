@@ -1,0 +1,333 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "0. Check setup (Python packages, Octave, Scilab)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "check"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Stage 7: weather check (Berhampur TMY)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage7-weather"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Stage 7: annual SDHW + economics + sizing",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage7-annual"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Stage 6: efficiency fit (ISO 9806)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage6-fit"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Stage 3: ANN surrogate + SHAP (slow)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage3-ann"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Stage 5: NSGA-II optimisation",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage5-nsga2"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Stage 5: verify optimum in GRAIL-CHT (very slow)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage5-verify"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Stage 6: virtual test matrix in GRAIL-CHT (very slow)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "stage6-testmatrix"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Figures F15-F19",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "figures"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Octave: annual model",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "octave-annual"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Octave: compare with Python (PASS/FAIL)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "octave-compare"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Octave: continuous-draw reference (slow)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "octave-cont"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Octave: export Xcos inputs",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "octave-export-xcos-inputs"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Xcos: run full year (4 cases)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "xcos-run"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Xcos: compare (PASS/CHECK)",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "xcos-compare"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Xcos: open block diagram",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "xcos-open"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Compare re-run results with delivered results",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "compare"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Reset work folder",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": [
+        "${workspaceFolder}/15_Run_in_VSCode/run.py",
+        "reset"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ]
+}
