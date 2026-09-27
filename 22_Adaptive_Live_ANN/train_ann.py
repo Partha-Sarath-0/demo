@@ -128,6 +128,14 @@ def make_demo_data(n=3000):
 
 
 # ---------------- LOAD ----------------
+if CSV_PATH and os.path.isdir(CSV_PATH):          # a folder was given -> find the CSV inside it
+    import glob
+    found = sorted(glob.glob(os.path.join(CSV_PATH, "**", "*.csv"), recursive=True))
+    if not found:
+        raise FileNotFoundError(f"No .csv file inside {CSV_PATH}")
+    print("CSV files found:", *found, sep="\n  ")
+    CSV_PATH = max(found, key=os.path.getsize)    # use the largest one
+    print("Using:", CSV_PATH)
 df = pd.read_csv(CSV_PATH) if CSV_PATH else make_demo_data()
 print(f"Loaded {len(df)} rows x {df.shape[1]} columns")
 
